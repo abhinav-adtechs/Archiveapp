@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="?attr/actionBarSize"
-    tools:context=".SettingsActivity"
+    tools:context=".Activity.SettingsActivity"
     tools:showIn="@layout/activity_settings">
 
     <LinearLayout

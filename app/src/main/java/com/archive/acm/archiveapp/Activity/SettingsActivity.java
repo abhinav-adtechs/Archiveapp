@@ -1,9 +1,11 @@
-package com.archive.acm.archiveapp;
+package com.archive.acm.archiveapp.Activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.archive.acm.archiveapp.R;
 
 public class SettingsActivity extends AppCompatActivity {
 
