@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".SettingsActivity"
+    tools:showIn="@layout/activity_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="Discussion Room Settings: "
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/change_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <LinearLayout
+            android:id="@+id/change_notification_tone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification Tone: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+
+            <TextView
+                android:id="@+id/settings_noti_tone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default" />
+        </LinearLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/change_vibration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vibration"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="App Settings: "
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/change_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Theme: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/change_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Font: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="Miscellaneous: "
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/dev_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer Team"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/opn_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open Source Licenses"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credits "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+        <include layout="@layout/settings_divider" />
+
+        <RelativeLayout
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings_selector"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset App Data "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#212121" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
