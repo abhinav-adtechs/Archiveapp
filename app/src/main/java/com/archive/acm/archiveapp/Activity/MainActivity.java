@@ -26,6 +26,12 @@ public class MainActivity extends Activity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 
+        initialize();
+
+    }
+
+    private void initialize(){
+
         mainRecyclerView = (RecyclerView) findViewById(R.id.main_recycler_view) ;
         mainRecyclerView.setHasFixedSize(true);
 
@@ -36,8 +42,6 @@ public class MainActivity extends Activity {
                 "DISCUSSION", "CALENDAR", "ARCHIVE"
         }) ;
         mainRecyclerView.setAdapter(mainRecyclerAdapter);
-
-
 
     }
 

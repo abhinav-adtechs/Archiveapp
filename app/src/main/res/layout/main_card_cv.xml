@@ -13,7 +13,7 @@
         card_view:cardCornerRadius="4dp">
 
         <TextView
-            android:id="@+id/info_text"
+            android:id="@+id/main_card_text"
             android:layout_width="match_parent"
             android:layout_gravity="center"
             android:textSize="40dp"
