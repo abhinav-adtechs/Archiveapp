@@ -14,6 +14,8 @@ import java.util.List;
 
 public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder>{
 
+    public static int POSITION ;
+
     List<MainData> headings ;
     public MainAdapter(List<MainData> headings) {
         this.headings = headings;
@@ -69,4 +71,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewHolder>{
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
+
+    @Override
+    public long getItemId(int position) {
+        POSITION = position ;
+        return super.getItemId(position);
+    }
+
 }
